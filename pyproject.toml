@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telco-churn-copilot"
+version = "0.1.0"
+description = "ML churn prediction + RAG over retention policies + an LLM copilot with citation checks, for a mobile operator."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Abhishek Pandey" }]
+dependencies = [
+  "anthropic>=1.0",
+  "pydantic>=2.6",
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scikit-learn>=1.4",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "nbformat>=5.9", "nbclient>=0.10", "ipykernel>=6.29"]
+
+[project.scripts]
+churn = "churn_copilot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+churn_copilot = ["knowledge/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
