@@ -1,0 +1,17 @@
+[
+  {"question": "What can we offer a high-risk customer who agrees to a longer contract?", "expected": "retention-offers#offers-for-high-risk-customers"},
+  {"question": "Customer has a 4.5% dropped call rate, how much credit do they get?", "expected": "network-compensation#compensation-amounts"},
+  {"question": "Should we give a discount when the problem is bad network coverage?", "expected": "retention-offers#offers-when-network-quality-is-the-driver"},
+  {"question": "Can we call customers proactively with a retention offer without consent?", "expected": "gdpr-and-consent#legal-basis"},
+  {"question": "Is it allowed to decide the offer amount based on the customer's age?", "expected": "gdpr-and-consent#data-minimisation"},
+  {"question": "How much does a customer pay if they leave a 24-month contract early?", "expected": "contract-policy#early-termination"},
+  {"question": "Who needs to approve a 30% discount?", "expected": "retention-offers#offers-for-high-risk-customers"},
+  {"question": "What happens with a customer who called support 4 times this quarter?", "expected": "customer-care-escalation#repeated-support-contacts"},
+  {"question": "What probability counts as medium risk?", "expected": "churn-model-card#risk-bands"},
+  {"question": "Can a month-to-month customer switch to a 12-month contract and is there a fee?", "expected": "contract-policy#moving-to-a-longer-contract"},
+  {"question": "Offer for a medium risk customer on the Basic 10GB plan", "expected": "retention-offers#offers-for-medium-risk-customers"},
+  {"question": "Can the churn score alone be used to refuse a customer a contract?", "expected": "gdpr-and-consent#automated-decisions"},
+  {"question": "Why does Cologne have higher churn than other cities?", "expected": "churn-model-card#known-limitations"},
+  {"question": "Should we suggest adding a second line at a discount?", "expected": "retention-offers#family-bundle-upsell"},
+  {"question": "Customer pays by invoice and payments keep failing", "expected": "customer-care-escalation#payment-problems"}
+]
