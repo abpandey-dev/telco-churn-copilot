@@ -12,23 +12,16 @@
 
 ---
 
-## What it does
+## How it works
 
-```mermaid
-flowchart LR
-    DATA["Synthetic customer base<br/>5,000 customers · 4 German cities<br/>known churn drivers"]
-    ML["Churn models<br/>logistic regression vs gradient boosting<br/>per-customer explanations"]
-    KB["Policy knowledge base<br/>retention offers · contracts · network<br/>compensation · care · GDPR"]
-    RAG["RAG retriever<br/>TF-IDF over policy sections<br/>(eval: hit@3 87%)"]
-    LLM["LLM copilot (Claude)<br/>tools: customer risk · segments · policy search"]
-    OUT["Answer + actions<br/>each action cites a policy chunk<br/>citations verified against retrieval"]
-    DATA --> ML --> LLM
-    KB --> RAG --> LLM
-    LLM --> OUT
-```
+![How Telco Churn Copilot works](docs/how-it-works.svg)
 
 A retention agent asks: *"Customer C-04124 says they want to leave. What can we offer?"*
 The copilot calls the **churn model** (99.7% risk; drivers: 5.9% dropped calls, 7 support calls, month-to-month contract), **searches the policies** (network-quality cases need a ticket and compensation *before* any discount; above 4% dropped calls the customer may leave without notice), and answers with actions that each cite a policy section. **Any citation to a section it never retrieved is flagged** as a possible hallucination.
+
+## What we get from it
+
+![What we get from Telco Churn Copilot](docs/what-we-get.svg)
 
 ## Copilot answers (real runs, Claude Haiku 5.5)
 
