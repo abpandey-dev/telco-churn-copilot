@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect width="1200" height="700" fill="#FFFFFF"/>
+<text x="40" y="52" font-size="28" fill="#0F172A" font-weight="700">Telco Churn Copilot: what we get from it</text>
+<text x="40" y="80" font-size="15" fill="#475569">Synthetic data with known causes, so every finding can be checked against the truth</text>
+<rect x="24" y="104" width="372" height="360" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="44" y="136" font-size="16" fill="#0F172A" font-weight="700">Churn model (ROC-AUC)</text>
+<text x="44" y="158" font-size="12" fill="#64748B">held-out customers</text>
+<text x="152" y="189" font-size="13" fill="#0F172A" font-weight="700" text-anchor="end">Logistic reg.</text>
+<rect x="164" y="170" width="180" height="28" rx="4" fill="#F1F5F9"/>
+<rect x="164" y="170" width="136.1" height="28" rx="4" fill="#2563EB"/>
+<text x="290.08000000000004" y="189" font-size="13" fill="#FFFFFF" font-weight="700" text-anchor="end">0.756</text>
+<text x="152" y="233" font-size="13" fill="#334155" text-anchor="end">Gradient boost.</text>
+<rect x="164" y="214" width="180" height="28" rx="4" fill="#F1F5F9"/>
+<rect x="164" y="214" width="128.9" height="28" rx="4" fill="#94A3B8"/>
+<text x="282.88" y="233" font-size="13" fill="#FFFFFF" font-weight="700" text-anchor="end">0.716</text>
+<text x="44" y="290" font-size="13" fill="#475569">The simpler model wins: as accurate,</text>
+<text x="44" y="312" font-size="13" fill="#475569">better calibrated, and its</text>
+<text x="44" y="334" font-size="13" fill="#475569">explanations are exact.</text>
+<text x="44" y="356" font-size="13" fill="#475569"></text>
+<text x="44" y="378" font-size="13" fill="#475569">Its top 6 learned drivers are exactly</text>
+<text x="44" y="400" font-size="13" fill="#475569">the 6 strongest true drivers.</text>
+<rect x="414" y="104" width="372" height="360" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="434" y="136" font-size="16" fill="#0F172A" font-weight="700">Policy retrieval</text>
+<text x="434" y="158" font-size="12" fill="#64748B">15 realistic agent questions</text>
+<text x="512" y="189" font-size="13" fill="#0F172A" font-weight="700" text-anchor="end">hit@1</text>
+<rect x="524" y="170" width="200" height="28" rx="4" fill="#F1F5F9"/>
+<rect x="524" y="170" width="146.0" height="28" rx="4" fill="#0F766E"/>
+<text x="660.0" y="189" font-size="13" fill="#FFFFFF" font-weight="700" text-anchor="end">73%</text>
+<text x="512" y="233" font-size="13" fill="#0F172A" font-weight="700" text-anchor="end">hit@3</text>
+<rect x="524" y="214" width="200" height="28" rx="4" fill="#F1F5F9"/>
+<rect x="524" y="214" width="174.0" height="28" rx="4" fill="#0F766E"/>
+<text x="688.0" y="233" font-size="13" fill="#FFFFFF" font-weight="700" text-anchor="end">87%</text>
+<text x="434" y="290" font-size="13" fill="#475569">The right policy section is in the</text>
+<text x="434" y="312" font-size="13" fill="#475569">top 3 for 13 of 15 questions.</text>
+<text x="434" y="334" font-size="13" fill="#475569"></text>
+<text x="434" y="356" font-size="13" fill="#475569">Misses are honest keyword failures,</text>
+<text x="434" y="378" font-size="13" fill="#475569">e.g. &quot;approve&quot; vs &quot;approval&quot;.</text>
+<rect x="804" y="104" width="372" height="360" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="824" y="136" font-size="16" fill="#0F172A" font-weight="700">Copilot answers</text>
+<text x="824" y="158" font-size="12" fill="#64748B">real runs, Claude Haiku 5.5</text>
+<text x="824" y="226" font-size="56" fill="#6D28D9" font-weight="800">3 / 3</text>
+<text x="824" y="258" font-size="15" fill="#0F172A" font-weight="700">policy-correct answers</text>
+<text x="824" y="292" font-size="13" fill="#475569">every citation verified</text>
+<text x="824" y="314" font-size="13" fill="#475569">$0.0012-0.0025 per answer</text>
+<text x="824" y="336" font-size="13" fill="#475569"></text>
+<text x="824" y="358" font-size="13" fill="#475569">said &quot;I did not retrieve the network</text>
+<text x="824" y="380" font-size="13" fill="#475569">compensation policy&quot; instead of</text>
+<text x="824" y="402" font-size="13" fill="#475569">guessing</text>
+<rect x="24" y="488" width="276" height="192" rx="14" fill="#EFF6FF" stroke="#BFDBFE"/>
+<text x="44" y="534" font-size="30" fill="#1D4ED8" font-weight="800">36% vs 11%</text>
+<text x="44" y="564" font-size="14" fill="#0F172A" font-weight="700">contract is the biggest lever</text>
+<text x="44" y="588" font-size="12" fill="#475569">month-to-month customers churn</text>
+<text x="44" y="606" font-size="12" fill="#475569">at 36%; 24-month contracts</text>
+<text x="44" y="624" font-size="12" fill="#475569">at 11%</text>
+<rect x="316" y="488" width="276" height="192" rx="14" fill="#FFFBEB" stroke="#FDE68A"/>
+<text x="336" y="534" font-size="30" fill="#B45309" font-weight="800">34% → 90%+</text>
+<text x="336" y="564" font-size="14" fill="#0F172A" font-weight="700">network quality drives churn</text>
+<text x="336" y="588" font-size="12" fill="#475569">once the dropped-call rate</text>
+<text x="336" y="606" font-size="12" fill="#475569">goes above 2%, churn climbs</text>
+<text x="336" y="624" font-size="12" fill="#475569">from 34% to over 90%</text>
+<rect x="608" y="488" width="276" height="192" rx="14" fill="#F0FDFA" stroke="#99F6E4"/>
+<text x="628" y="534" font-size="30" fill="#0F766E" font-weight="800">City ≈ 0</text>
+<text x="628" y="564" font-size="14" fill="#0F172A" font-weight="700">Cologne isn&#x27;t the cause</text>
+<text x="628" y="588" font-size="12" fill="#475569">Cologne churns most (34%) but</text>
+<text x="628" y="606" font-size="12" fill="#475569">has double the dropped calls:</text>
+<text x="628" y="624" font-size="12" fill="#475569">fix the network, not marketing</text>
+<rect x="900" y="488" width="276" height="192" rx="14" fill="#FAF5FF" stroke="#E9D5FF"/>
+<text x="920" y="534" font-size="34" fill="#6E56CF" font-weight="800">GDPR</text>
+<text x="920" y="564" font-size="14" fill="#0F172A" font-weight="700">built into the policies</text>
+<text x="920" y="588" font-size="12" fill="#475569">consent for proactive offers;</text>
+<text x="920" y="606" font-size="12" fill="#475569">no decision on a score alone</text>
+<text x="920" y="624" font-size="12" fill="#475569">(Art. 22); a human decides</text>
+</svg>

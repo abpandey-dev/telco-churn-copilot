@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect width="1200" height="650" fill="#FFFFFF"/>
+<text x="40" y="52" font-size="28" fill="#0F172A" font-weight="700">Telco Churn Copilot: how it works</text>
+<text x="40" y="80" font-size="15" fill="#475569">Machine learning + RAG over company policy + an LLM copilot, wired together and tested</text>
+<rect x="24" y="104" width="630" height="190" rx="14" fill="#EFF6FF" stroke="#BFDBFE"/>
+<text x="44" y="132" font-size="13" fill="#1D4ED8" font-weight="700" letter-spacing="1">MACHINE LEARNING</text>
+<rect x="44" y="144" width="260" height="130" rx="10" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+<text x="62" y="174" font-size="15" fill="#0F172A" font-weight="700">Customer data</text>
+<text x="62" y="200" font-size="12" fill="#334155">5,000 synthetic customers</text>
+<text x="62" y="220" font-size="12" fill="#334155">4 German cities</text>
+<text x="62" y="240" font-size="12" fill="#334155">known churn drivers built in</text>
+<rect x="350" y="144" width="284" height="130" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+<text x="368" y="174" font-size="15" fill="#1D4ED8" font-weight="700">Churn models</text>
+<text x="368" y="200" font-size="12" fill="#334155">logistic regression vs</text>
+<text x="368" y="220" font-size="12" fill="#334155">gradient boosting</text>
+<text x="368" y="240" font-size="12" fill="#334155">risk + reasons per customer</text>
+<line x1="304" y1="209" x2="346" y2="209" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="24" y="314" width="630" height="190" rx="14" fill="#F0FDFA" stroke="#99F6E4"/>
+<text x="44" y="342" font-size="13" fill="#0F766E" font-weight="700" letter-spacing="1">RAG · COMPANY POLICIES</text>
+<rect x="44" y="354" width="260" height="130" rx="10" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+<text x="62" y="384" font-size="15" fill="#0F172A" font-weight="700">Policy documents</text>
+<text x="62" y="410" font-size="12" fill="#334155">6 documents, 25 sections</text>
+<text x="62" y="430" font-size="12" fill="#334155">offers · contracts · network</text>
+<text x="62" y="450" font-size="12" fill="#334155">care · GDPR</text>
+<rect x="350" y="354" width="284" height="130" rx="10" fill="#FFFFFF" stroke="#0F766E" stroke-width="2"/>
+<text x="368" y="384" font-size="15" fill="#0F766E" font-weight="700">Policy search</text>
+<text x="368" y="410" font-size="12" fill="#334155">TF-IDF over sections</text>
+<text x="368" y="430" font-size="12" fill="#334155">stable section ids</text>
+<text x="368" y="450" font-size="12" fill="#334155">measured on 15 questions</text>
+<line x1="304" y1="419" x2="346" y2="419" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="690" y="144" width="250" height="360" rx="10" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+<text x="708" y="174" font-size="15" fill="#6D28D9" font-weight="700">Retention copilot</text>
+<text x="924" y="174" font-size="11" fill="#D97757" font-weight="700" text-anchor="end">CLAUDE</text>
+<text x="708" y="200" font-size="12" fill="#334155">Claude decides which tools</text>
+<text x="708" y="220" font-size="12" fill="#334155">to call:</text>
+<text x="708" y="240" font-size="12" fill="#334155"></text>
+<text x="708" y="260" font-size="12" fill="#334155">• get_customer_risk</text>
+<text x="708" y="280" font-size="12" fill="#334155">• segment_churn</text>
+<text x="708" y="300" font-size="12" fill="#334155">• search_policies</text>
+<text x="708" y="320" font-size="12" fill="#334155"></text>
+<text x="708" y="340" font-size="12" fill="#334155">Answers in JSON; every</text>
+<text x="708" y="360" font-size="12" fill="#334155">recommended action cites</text>
+<text x="708" y="380" font-size="12" fill="#334155">a policy section</text>
+<line x1="634" y1="209" x2="686" y2="240" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="634" y1="419" x2="686" y2="390" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="976" y="144" width="200" height="360" rx="10" fill="#FFFFFF" stroke="#16A34A" stroke-width="2"/>
+<text x="994" y="174" font-size="15" fill="#15803D" font-weight="700">Citation check</text>
+<text x="994" y="200" font-size="12" fill="#334155">cited section ids are</text>
+<text x="994" y="220" font-size="12" fill="#334155">compared with the</text>
+<text x="994" y="240" font-size="12" fill="#334155">sections actually</text>
+<text x="994" y="260" font-size="12" fill="#334155">retrieved</text>
+<text x="994" y="280" font-size="12" fill="#334155"></text>
+<text x="994" y="300" font-size="12" fill="#334155">anything else is</text>
+<text x="994" y="320" font-size="12" fill="#334155">flagged as a possible</text>
+<text x="994" y="340" font-size="12" fill="#334155">hallucination</text>
+<text x="994" y="360" font-size="12" fill="#334155"></text>
+<text x="994" y="380" font-size="12" fill="#334155">→ a human agent decides</text>
+<line x1="940" y1="324" x2="972" y2="324" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="24" y="524" width="1152" height="104" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="44" y="552" font-size="13" fill="#334155" font-weight="700" letter-spacing="1">ANALYSIS NOTEBOOK</text>
+<text x="44" y="590" font-size="13" fill="#334155">Executed Jupyter notebook with 8 charts: churn by contract, tenure, city and dropped calls, ROC, calibration, risk distribution, learned vs true drivers.</text>
+</svg>
